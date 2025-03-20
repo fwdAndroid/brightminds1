@@ -2,7 +2,6 @@ import 'package:brightminds/screens/auth/login_screen.dart';
 import 'package:brightminds/screens/pages/settings/app_introduction.dart';
 import 'package:brightminds/screens/pages/settings/privacy_policy.dart';
 import 'package:brightminds/screens/pages/settings/subscription_pdf.dart';
-import 'package:brightminds/screens/payment/payment_screen.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -75,25 +74,7 @@ class ProfilePage extends StatelessWidget {
             ),
             SizedBox(height: 16),
             // Report Cards Section
-            Card(
-              child: ListTile(
-                onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (builder) => PaymentScreen()));
-                },
-                trailing: Icon(
-                  Icons.arrow_forward_ios,
-                ),
-                leading: Icon(
-                  Icons.payment,
-                ),
-                title: Text(
-                  "Payment Integration",
-                  style: TextStyle(
-                      color: Colors.black, fontWeight: FontWeight.w700),
-                ),
-              ),
-            ),
+
             Card(
               child: ListTile(
                 onTap: () {

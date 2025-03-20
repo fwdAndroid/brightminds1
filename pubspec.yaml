@@ -38,7 +38,6 @@ dependencies:
   flutter_pdfview: ^1.4.0
   google_fonts: ^6.2.1
   just_audio: ^0.9.34
-  pay: ^3.0.1
   url_launcher: ^6.3.1
   video_player: ^2.9.2
 
@@ -59,8 +58,6 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/
-    - assets/apple.json
-    - assets/google.json
     
   # https://flutter.dev/to/resolution-aware-images
   # For details regarding adding assets from package dependencies, see
