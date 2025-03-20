@@ -1,7 +1,6 @@
 import 'package:brightminds/screens/auth/login_screen.dart';
 import 'package:brightminds/screens/pages/settings/app_introduction.dart';
 import 'package:brightminds/screens/pages/settings/privacy_policy.dart';
-import 'package:brightminds/screens/pages/settings/subscription_pdf.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -10,12 +9,10 @@ class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: const Color.fromRGBO(255, 255, 255, 1),
       appBar: AppBar(
+        centerTitle: true,
         automaticallyImplyLeading: false,
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        leading: Icon(Icons.arrow_back, color: Colors.black),
         title: Text(
           'Profile',
           style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
@@ -115,27 +112,7 @@ class ProfilePage extends StatelessWidget {
                 ),
               ),
             ),
-            Card(
-              child: ListTile(
-                onTap: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (builder) => SubscriptionPdf()));
-                },
-                trailing: Icon(
-                  Icons.arrow_forward_ios,
-                ),
-                leading: Icon(
-                  Icons.subscriptions,
-                ),
-                title: Text(
-                  "Subscription Plan",
-                  style: TextStyle(
-                      color: Colors.black, fontWeight: FontWeight.w700),
-                ),
-              ),
-            ),
+
             Card(
               child: ListTile(
                 onTap: () async {

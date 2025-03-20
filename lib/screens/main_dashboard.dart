@@ -35,11 +35,11 @@ class _MainDashboardState extends State<MainDashboard> {
               label: "Home",
               icon: _currentIndex == 0
                   ? Icon(
-                      Icons.location_pin,
+                      Icons.home,
                       color: Colors.black,
                     )
                   : Icon(
-                      Icons.location_pin,
+                      Icons.home,
                       color: Colors.grey,
                     )),
           BottomNavigationBarItem(
