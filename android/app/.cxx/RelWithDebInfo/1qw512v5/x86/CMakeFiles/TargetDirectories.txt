@@ -1,0 +1,2 @@
+D:/current projects/brightminds/android/app/.cxx/RelWithDebInfo/1qw512v5/x86/CMakeFiles/edit_cache.dir
+D:/current projects/brightminds/android/app/.cxx/RelWithDebInfo/1qw512v5/x86/CMakeFiles/rebuild_cache.dir
