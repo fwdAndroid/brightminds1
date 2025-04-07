@@ -1,0 +1,1 @@
+ D:\\current\ projects\\brightminds\\.dart_tool\\flutter_build\\6a7819d0257b86b39de4967917b61a4d\\native_assets.json: 

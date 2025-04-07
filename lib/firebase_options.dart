@@ -17,17 +17,29 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      return web;
+      throw UnsupportedError(
+        'DefaultFirebaseOptions have not been configured for web - '
+        'you can reconfigure this by running the FlutterFire CLI again.',
+      );
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        return ios;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for ios - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
-        return windows;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for windows - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -42,48 +54,9 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyBA6Bbrws9h9AFELD9LNQFCaONgy0V0kaE',
-    appId: '1:677943389995:android:a7956740e207c4b2e25f6e',
+    appId: '1:677943389995:android:1a3e4fb400d92014e25f6e',
     messagingSenderId: '677943389995',
     projectId: 'beyoundthecall',
     storageBucket: 'beyoundthecall.appspot.com',
   );
-
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBQvpiUOvayp1pqCB2Lq87WB9qnrM6U_SI',
-    appId: '1:677943389995:ios:980e7a2586dbfa3de25f6e',
-    messagingSenderId: '677943389995',
-    projectId: 'beyoundthecall',
-    storageBucket: 'beyoundthecall.appspot.com',
-    iosBundleId: 'com.example.brightminds',
-  );
-
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCR40cVlcYWeDeX4HuOoEDbE_cRQ3aJ9Ig',
-    appId: '1:677943389995:web:1169627f02a2be74e25f6e',
-    messagingSenderId: '677943389995',
-    projectId: 'beyoundthecall',
-    authDomain: 'beyoundthecall.firebaseapp.com',
-    storageBucket: 'beyoundthecall.appspot.com',
-    measurementId: 'G-65EXGQFLMR',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyBQvpiUOvayp1pqCB2Lq87WB9qnrM6U_SI',
-    appId: '1:677943389995:ios:980e7a2586dbfa3de25f6e',
-    messagingSenderId: '677943389995',
-    projectId: 'beyoundthecall',
-    storageBucket: 'beyoundthecall.appspot.com',
-    iosBundleId: 'com.example.brightminds',
-  );
-
-  static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyCR40cVlcYWeDeX4HuOoEDbE_cRQ3aJ9Ig',
-    appId: '1:677943389995:web:ee4171f68461c558e25f6e',
-    messagingSenderId: '677943389995',
-    projectId: 'beyoundthecall',
-    authDomain: 'beyoundthecall.firebaseapp.com',
-    storageBucket: 'beyoundthecall.appspot.com',
-    measurementId: 'G-WTDB16WD38',
-  );
-
 }

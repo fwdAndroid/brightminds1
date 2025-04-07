@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:677943389995:android:a7956740e207c4b2e25f6e",
+        "mobilesdk_app_id": "1:677943389995:android:1a3e4fb400d92014e25f6e",
         "android_client_info": {
-          "package_name": "com.example.brightminds"
+          "package_name": "com.brightminds.fawad"
         }
       },
       "oauth_client": [],
